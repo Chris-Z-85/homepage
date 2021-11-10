@@ -933,7 +933,7 @@
   color: white;
 }
 
-* body .portfolio p {
+* body .portfolio__description {
   margin: 20px;
 }
 
