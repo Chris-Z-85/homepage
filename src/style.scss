@@ -33,7 +33,7 @@
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
     color: $primary-dark;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 1000;
     line-height: 1.2;
   }
@@ -272,6 +272,7 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
       flex-direction: column;
       padding: 3rem;
       width: 100vw;
+      margin: 10px;
 
       &__buttons {
         @include flex-center();
@@ -328,7 +329,7 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
           border-right: solid 2px rgba(255, 255, 255, 0.7);
           white-space: nowrap;
           overflow: hidden;
-          width: 19ch;
+          width: 17ch;
           animation: typewriter 3s steps(19) 1s, cursor 700ms steps(19) infinite;
         }
 
@@ -337,7 +338,7 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
             width: 0;
           }
           100% {
-            width: 19ch;
+            width: 17ch;
           }
         }
 
@@ -660,9 +661,14 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
       @include flex-center();
       flex-direction: column;
       font-size: 1.25rem;
+      margin: 10px;
 
       a {
         color: white;
+      }
+
+      p {
+        margin: 20px;
       }
 
       &__heading {
@@ -828,6 +834,10 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
       flex-direction: column;
       font-size: 1.25rem;
       width: 100vw;
+
+      p {
+        margin: 20px;
+      }
 
       &__heading {
         @include heading();
