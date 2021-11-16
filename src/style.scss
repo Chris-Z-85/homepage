@@ -272,7 +272,6 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
       flex-direction: column;
       padding: 3rem;
       width: 100vw;
-      margin: 10px;
 
       &__buttons {
         @include flex-center();
@@ -493,6 +492,7 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
       padding: 3rem;
       flex-direction: column;
       font-size: 1.25rem;
+      width: 100vw;
 
       &__heading {
         @include heading();
@@ -661,7 +661,6 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
       @include flex-center();
       flex-direction: column;
       font-size: 1.25rem;
-      margin: 10px;
 
       a {
         color: white;
@@ -669,6 +668,7 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
 
       &__description {
         margin: 20px;
+        text-align: center;
       }
 
       &__heading {
@@ -720,6 +720,7 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
 
             p {
               font-size: 0.9rem;
+              text-align: center;
             }
 
             ul {
@@ -793,7 +794,7 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
       }
 
       &__github-link {
-        width: 90vw;
+        width: 95vw;
 
         p {
           @include flex-center();
@@ -836,7 +837,8 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
       width: 100vw;
 
       p {
-        margin: 20px;
+        text-align: center;
+        padding: 20px;
       }
 
       &__heading {
@@ -848,8 +850,8 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
         @include flex-center();
         flex-direction: column;
         gap: 20px;
-        width: 80vw;
-        margin: 100px;
+        width: 90vw;
+        margin-top: 50px;
 
         & input {
           font-size: 1rem;
@@ -859,7 +861,7 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
           border: 1px solid #ced4da;
           border-radius: 25px;
           padding: 1.5rem;
-          width: 100%;
+          width: 80%;
           height: calc(1.5em + 0.75rem + 2px);
         }
 
@@ -870,6 +872,10 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
         }
         &__subject {
           width: 100%;
+
+          input {
+            width: 100%;
+          }
         }
         &__message {
           width: 100%;
@@ -884,6 +890,8 @@ $primary-background: linear-gradient(120deg, #232a2d, #000 60%);
             height: auto;
             border-radius: 25px;
             padding: 20px;
+            resize: none;
+            width: 100%;
           }
         }
       }
