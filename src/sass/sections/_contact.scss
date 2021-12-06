@@ -1,0 +1,81 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/breakpoints" as *;
+@use "../abstracts/variables" as *;
+
+.contact {
+  @include flex-center();
+  flex-direction: column;
+  font-size: 1.25rem;
+  width: 100vw;
+
+  p {
+    text-align: center;
+    padding: 20px;
+  }
+
+  &__heading {
+    @include heading();
+    width: 100%;
+  }
+
+  &__form {
+    @include flex-center();
+    flex-direction: column;
+    gap: 20px;
+    width: 90vw;
+    margin-top: 50px;
+
+    & input {
+      font-size: 1rem;
+      font-family: "Rubik", sans-serif;
+      color: white;
+      background-color: $primary-dark;
+      border: 1px solid #ced4da;
+      border-radius: 25px;
+      padding: 1.5rem;
+      width: 80%;
+      height: calc(1.5em + 0.75rem + 2px);
+    }
+
+    &__name {
+      @include flex-center();
+      gap: 20px;
+      width: 100%;
+    }
+    &__subject {
+      width: 100%;
+
+      input {
+        width: 100%;
+      }
+    }
+    &__message {
+      width: 100%;
+
+      textarea {
+        font-family: "Rubik", sans-serif;
+        color: white;
+        font-size: 1rem;
+        background-color: $primary-dark;
+        border: 1px solid #ced4da;
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+        padding: 20px;
+        resize: none;
+        width: 100%;
+      }
+    }
+  }
+
+  button {
+    @include button();
+    border: 1px solid $primary-purple;
+  }
+
+  @include lg-screen {
+    &__form {
+      width: 50vw;
+    }
+  }
+}

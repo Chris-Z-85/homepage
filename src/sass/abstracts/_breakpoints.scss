@@ -1,0 +1,7 @@
+@use "variables" as *;
+
+@mixin lg-screen {
+  @media only screen and (min-width: $large-screen) {
+    @content;
+  }
+}

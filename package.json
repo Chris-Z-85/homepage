@@ -1,0 +1,23 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "My homepage where you can find information about me, contact details, my resume and projects portfolio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chris-Z-85/homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chris-Z-85/homepage/issues"
+  },
+  "homepage": "https://github.com/Chris-Z-85/homepage#readme",
+  "devDependencies": {
+    "sass": "^1.44.0"
+  }
+}

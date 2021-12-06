@@ -1,0 +1,40 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.footer {
+  @include flex-center();
+  flex-direction: column;
+  width: 100vw;
+
+  &__links {
+    @include flex-center();
+    gap: 20px;
+    padding: 40px;
+
+    &__link {
+      @include flex-center();
+      background-color: white;
+      border: 2px solid $primary-purple;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+
+      i {
+        color: $primary-purple;
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        border: 2px solid white;
+        background-color: $primary-purple;
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__copyrights {
+    padding: 20px;
+  }
+}
