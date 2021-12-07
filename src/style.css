@@ -967,4 +967,18 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   padding: 20px;
 }
 
+/* CSS rules for Intersection Observer */
+h1,
+p {
+  opacity: 0;
+  position: relative;
+  bottom: -40px;
+  transition: all 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
