@@ -1,0 +1,8 @@
+@use "../abstracts/variables" as *;
+
+.contact-icon {
+  fill: $primary-purple;
+  width: 2.5rem;
+  height: 2.5rem;
+  stroke: $primary-purple;
+}

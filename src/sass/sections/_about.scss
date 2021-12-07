@@ -36,13 +36,10 @@
       width: fit-content;
       gap: 20px;
 
-      i {
-        color: white;
-        font-size: 2rem;
-
+      svg {
         &:hover {
-          color: $primary-purple;
-          font-size: 1.5rem;
+          width: 1.5rem;
+          height: 1.5rem;
         }
       }
     }
@@ -58,10 +55,10 @@
       justify-content: space-around;
 
       &__icons {
-        i {
-          font-size: 3rem;
+        svg {
           &:hover {
-            font-size: 2.5rem;
+            width: 2rem;
+            height: 2rem;
           }
         }
       }
