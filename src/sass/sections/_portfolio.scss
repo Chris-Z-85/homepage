@@ -145,6 +145,13 @@
       @include flex-center();
       flex-direction: column;
     }
+
+    i {
+      color: $primary-light-gray;
+      font-size: 0.7rem;
+      position: relative;
+      bottom: 20px;
+    }
   }
 
   @include lg-screen {
