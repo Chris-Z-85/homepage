@@ -15,7 +15,7 @@ header {
   .navbar {
     @include flex-center();
     justify-content: flex-end;
-    background: $primary-purple;
+    background: $primary-purple-translucent;
     width: 100vw;
     padding: 0px;
     top: 0;
