@@ -30,8 +30,8 @@
       font-family: "Rubik", sans-serif;
       color: white;
       background-color: $primary-dark;
-      border: 1px solid #ced4da;
-      border-radius: 25px;
+      box-shadow: 2px 2px $primary-purple;
+      outline: none;
       padding: 1.5rem;
       width: 80%;
       height: calc(1.5em + 0.75rem + 2px);
@@ -42,13 +42,7 @@
       gap: 20px;
       width: 100%;
     }
-    &__subject {
-      width: 100%;
 
-      input {
-        width: 100%;
-      }
-    }
     &__message {
       width: 100%;
 
@@ -57,13 +51,13 @@
         color: white;
         font-size: 1rem;
         background-color: $primary-dark;
-        border: 1px solid #ced4da;
         width: 100%;
-        height: auto;
-        border-radius: 25px;
+        height: 150px;
         padding: 20px;
         resize: none;
         width: 100%;
+        box-shadow: 2px 2px $primary-purple;
+        outline: none;
       }
     }
   }
