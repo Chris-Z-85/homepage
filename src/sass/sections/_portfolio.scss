@@ -138,19 +138,12 @@
     }
   }
 
-  &__github-link {
+  &__links {
     width: 95vw;
 
     p {
       @include flex-center();
       flex-direction: column;
-    }
-
-    i {
-      color: $primary-light-gray;
-      font-size: 0.7rem;
-      position: relative;
-      bottom: 20px;
     }
   }
 
@@ -169,7 +162,7 @@
       }
     }
 
-    &__github-link {
+    &__links {
       width: fit-content;
 
       p {
