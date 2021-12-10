@@ -10,4 +10,5 @@ My homepage where you can find information about me, contact details, my resume 
 
 ## Link
 
-https://chris-z.netlify.app/
+Deployed: :arrow_right: [Here](https://chris-z.netlify.app/) :arrow_left:
+
