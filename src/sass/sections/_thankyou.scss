@@ -1,0 +1,16 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.thankyou {
+  @include flex-center;
+  flex-direction: column;
+  font-size: 2rem;
+  width: 100vw;
+  height: 100vh;
+  gap: 1rem;
+
+  &__check {
+    color: $primary-purple;
+    font-size: 400px;
+  }
+}

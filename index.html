@@ -390,8 +390,10 @@
           <p>Fill in your info in the form below and I look forward to hearing from you!</p>
         <form name="contact" method="POST" action="https://formsubmit.co/chris.z@aol.com" class="contact__form">
           <div class="contact__form__name">
-            <input type="text" name="name" id="name" placeholder="Name" />
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="hidden" name="_subject" value="New email from Homepage">
+            <input type="text" name="name" id="name" placeholder="Name" required/>
+            <input type="email" name="email" id="email" placeholder="Email" required/>
+            <input type="hidden" name="_next" value="https://chris-z.netlify.app/thankyou.html">
           </div>
           <div class="contact__form__message">
             <textarea
@@ -399,6 +401,7 @@
               name="message"
               id="message"
               placeholder="Message"
+              required
             ></textarea>
           </div>
           <div class="contact__form__button">
