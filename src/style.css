@@ -556,16 +556,15 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 100px;
-  padding: 20px;
+  gap: 150px;
   width: 100vw;
 }
 .portfolio__projects__item {
   align-items: center;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  width: 70vw;
+  gap: 100px;
+  width: 80vw;
 }
 .portfolio__projects__item:nth-child(even) {
   flex-direction: row-reverse;
@@ -574,6 +573,7 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   align-items: center;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   gap: 20px;
   line-height: 1.5rem;
@@ -595,13 +595,13 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   align-items: center;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-self: flex-start;
 }
 .portfolio__projects__item__description ul li {
   font-size: 1rem;
   font-family: "Courier New", Courier, monospace;
-  list-style: square;
-  padding-right: 10px;
+  list-style: square inside;
+  padding-right: 1rem;
 }
 .portfolio__projects__item__description__buttons {
   gap: 20px;
@@ -626,28 +626,25 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   border: 1px solid white;
 }
 .portfolio__projects__item__screen {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   border-radius: 10px;
   border: 2px solid white;
   width: 50%;
   overflow: hidden;
-  cursor: pointer;
 }
 .portfolio__projects__item__screen__nav {
-  background: #afafaf;
   border-bottom: 2px solid white;
   width: 100%;
-  padding: 10px;
+  padding: 7px;
 }
 .portfolio__projects__item__screen__nav i {
   padding: 3px;
+  font-size: 0.9rem;
 }
-.portfolio__projects__item__screen img {
+.portfolio__projects__item__screen a {
+  display: flex;
+}
+.portfolio__projects__item__screen a img {
   width: 100%;
-  height: 100%;
 }
 .portfolio__projects__item__screen:hover {
   transform: translateY(-10px);
