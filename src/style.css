@@ -526,6 +526,7 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   flex-direction: column;
   font-size: 1.25rem;
   gap: 2rem;
+  width: 80vw;
 }
 .portfolio a {
   color: white;
@@ -573,18 +574,16 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 150px;
+  gap: 100px;
   width: 100vw;
+  margin: 50px 0;
 }
 .portfolio__projects__item {
   align-items: center;
   display: flex;
   justify-content: center;
-  gap: 100px;
-  width: 80vw;
-}
-.portfolio__projects__item:nth-child(even) {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+  gap: 2rem;
 }
 .portfolio__projects__item__description {
   align-items: center;
@@ -594,7 +593,7 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   flex-direction: column;
   gap: 20px;
   line-height: 1.5rem;
-  width: 50%;
+  width: 80vw;
 }
 .portfolio__projects__item__description h2 {
   color: #7c3aed;
@@ -612,7 +611,8 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   align-items: center;
   display: flex;
   justify-content: center;
-  align-self: flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 .portfolio__projects__item__description ul li {
   font-size: 1rem;
@@ -621,8 +621,10 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   padding-right: 1rem;
 }
 .portfolio__projects__item__description__buttons {
-  gap: 20px;
-  padding: 20px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 .portfolio__projects__item__description__buttons button {
   background-color: white;
@@ -645,7 +647,7 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
 .portfolio__projects__item__screen {
   border-radius: 10px;
   border: 2px solid white;
-  width: 50%;
+  width: 80vw;
   overflow: hidden;
 }
 .portfolio__projects__item__screen__nav {
@@ -665,6 +667,25 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
 }
 .portfolio__projects__item__screen:hover {
   transform: translateY(-10px);
+}
+.portfolio__links {
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .portfolio {
+    font-size: 1.25rem;
+  }
+  .portfolio__projects {
+    margin: 100px 0;
+  }
+  .portfolio__projects__item {
+    flex-direction: row;
+    gap: 100px;
+    width: 80vw;
+  }
+  .portfolio__projects__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
 }
 
 .contact {

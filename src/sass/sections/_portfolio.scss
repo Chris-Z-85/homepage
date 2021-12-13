@@ -7,6 +7,7 @@
   flex-direction: column;
   font-size: 1.25rem;
   gap: 2rem;
+  width: 80vw;
 
   a {
     color: white;
@@ -25,17 +26,14 @@
   &__projects {
     @include flex-center();
     flex-direction: column;
-    gap: 150px;
+    gap: 100px;
     width: 100vw;
+    margin: 50px 0;
 
     &__item {
       @include flex-center();
-      gap: 100px;
-      width: 80vw;
-
-      &:nth-child(even) {
-        flex-direction: row-reverse;
-      }
+      flex-direction: column-reverse;
+      gap: 2rem;
 
       &__description {
         @include flex-center();
@@ -43,7 +41,7 @@
         flex-direction: column;
         gap: 20px;
         line-height: 1.5rem;
-        width: 50%;
+        width: 80vw;
 
         h2 {
           color: $primary-purple;
@@ -62,7 +60,8 @@
 
         ul {
           @include flex-center();
-          align-self: flex-start;
+          flex-wrap: wrap;
+          justify-content: flex-start;
 
           li {
             font-size: 1rem;
@@ -73,8 +72,8 @@
         }
 
         &__buttons {
-          gap: 20px;
-          padding: 20px;
+          @include flex-center();
+          gap: 10px;
 
           button {
             @include button();
@@ -93,7 +92,7 @@
       &__screen {
         border-radius: 10px;
         border: 2px solid white;
-        width: 50%;
+        width: 80vw;
         overflow: hidden;
 
         &__nav {
@@ -115,6 +114,28 @@
         }
         &:hover {
           transform: translateY(-10px);
+        }
+      }
+    }
+  }
+
+  &__links {
+    text-align: center;
+  }
+
+  @include lg-screen {
+    font-size: 1.25rem;
+
+    &__projects {
+      margin: 100px 0;
+
+      &__item {
+        flex-direction: row;
+        gap: 100px;
+        width: 80vw;
+
+        &:nth-child(even) {
+          flex-direction: row-reverse;
         }
       }
     }
