@@ -15,7 +15,7 @@ header {
   .navbar {
     @include flex-center();
     justify-content: flex-end;
-    background: $primary-purple-translucent;
+    background: $primary-purple;
     width: 100vw;
     padding: 0px;
     top: 0;
@@ -35,27 +35,17 @@ header {
 
     &.is-active {
       .navbar__menu {
-        position: absolute;
-        display: flex;
+        @include flex-center;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid $primary-purple;
-        border-radius: 10px;
+        justify-items: flex-start;
+        position: absolute;
         font-size: 4rem;
-        background-color: black;
-        width: 200px;
-        right: 10px;
-        top: 70px;
+        width: 100vw;
+        top: 55px;
+        background: $primary-purple;
 
-        & li {
-          width: 100%;
-          text-align: center;
-
-          &:hover {
-            background-color: $primary-purple;
-            color: white;
-          }
+        :last-child {
+          margin-bottom: 20px;
         }
       }
     }
@@ -97,6 +87,7 @@ header {
     }
 
     @include lg-screen {
+      background: $primary-purple-translucent;
       padding: 0px 50px 0px 0px;
 
       .navbar__hamburger {
