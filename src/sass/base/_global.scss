@@ -1,8 +1,42 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .contact-icon {
   fill: $primary-purple;
   width: 2.5rem;
   height: 2.5rem;
   stroke: $primary-purple;
+}
+
+.scroll-down {
+  @include arrow-btn;
+  position: fixed;
+  left: calc(50% - 10px);
+  bottom: 30px;
+  animation: action 1s infinite alternate;
+
+  @keyframes action {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.scroll-to-top {
+  display: none;
+
+  &.visible {
+    @include arrow-btn;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  }
 }

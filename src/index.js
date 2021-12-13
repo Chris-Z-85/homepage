@@ -1,7 +1,6 @@
+//Hamburger menu
 const hamburger = document.querySelector(".navbar__hamburger");
 const navbar = document.querySelector(".navbar");
-const header = document.querySelector("header");
-const arrow = document.querySelector(".hero__scroll-down");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");
@@ -11,16 +10,35 @@ hamburger.addEventListener("click", () => {
   navbar.classList.toggle("is-active");
 });
 
+//Header
+const header = document.querySelector("header");
 window.addEventListener("scroll", () =>
   header.classList.toggle("sticky", window.scrollY > 0)
 );
+
+//Scroll down
+const arrow = document.querySelector(".scroll-down");
 
 window.addEventListener("scroll", () =>
   arrow.classList.toggle("hidden", window.scrollY > 0)
 );
 
-//Intersection Observer Setup
+//Scroll to top
+const arrowUp = document.querySelector(".scroll-to-top");
 
+window.addEventListener("scroll", () =>
+  arrowUp.classList.toggle("visible", window.scrollY > 0)
+);
+
+arrowUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
+
+//Intersection Observer Setup
 window.addEventListener("DOMContentLoaded", setup);
 
 function setup() {

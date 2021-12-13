@@ -65,3 +65,14 @@
   letter-spacing: 0.05em;
   line-height: 175%;
 }
+
+@mixin arrow-btn {
+  @include flex-center();
+  background: $primary-dark;
+  height: 50px;
+  font-size: 2em;
+  width: 50px;
+  z-index: 11;
+  opacity: 0.8;
+  border-radius: 50%;
+}
