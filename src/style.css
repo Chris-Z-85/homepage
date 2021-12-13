@@ -328,7 +328,7 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   }
 }
 .about {
-  padding: 3rem;
+  width: 85vw;
   gap: 2rem;
 }
 .about__heading {
@@ -371,19 +371,16 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   padding: 1rem;
   letter-spacing: 0.05em;
   line-height: 175%;
-  text-align: justify;
-  font-size: 1.2rem;
-  line-height: 2rem;
 }
-.about__text h2 {
-  padding: 1rem;
-  color: #7c3aed;
+.about__text p {
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 .about__footer {
   align-items: center;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  flex-direction: column;
   padding: 1rem;
   gap: 50px;
 }
@@ -413,8 +410,7 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
   align-items: center;
   display: flex;
   justify-content: center;
-  width: fit-content;
-  gap: 40px;
+  gap: 2rem;
 }
 .about__footer__icons svg:hover {
   transform: translateY(-2px);
@@ -427,6 +423,7 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
     margin-top: 2.5em;
     width: 100%;
     flex-direction: row;
+    align-items: flex-end;
     justify-content: space-around;
   }
   .about__footer__icons svg:hover {
