@@ -834,6 +834,22 @@ header .navbar .navbar__hamburger.is-active span:nth-child(3) {
 }
 .footer__copyrights {
   padding: 20px;
+  text-align: center;
+}
+
+.thankyou {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 2rem;
+  width: 100vw;
+  height: 100vh;
+  gap: 1rem;
+}
+.thankyou__check {
+  color: #7c3aed;
+  font-size: 400px;
 }
 
 /* CSS rules for Intersection Observer */
