@@ -7,10 +7,8 @@ My homepage where you can find information about me, contact details, my resume 
 - HTML 5
 - CSS 3
 - Javascript
+- SASS
 
-## Link
-
-Deployed: :arrow_right: [Here](https://chris-z.netlify.app/) :arrow_left:
 
 ## Preview
 
